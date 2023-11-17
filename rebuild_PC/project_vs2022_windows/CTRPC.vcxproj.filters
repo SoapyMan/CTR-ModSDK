@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\psn00bsdk">
+      <UniqueIdentifier>{4D2A4975-B940-470B-02B8-D22C6E0D1893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\psn00bsdk\include">
+      <UniqueIdentifier>{C04ECE1C-2C11-02A7-75C1-9033E1C2DA84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\psn00bsdk\include\lzp">
+      <UniqueIdentifier>{2550F364-9168-DA8E-5A15-6A28C6EC6E28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\psn00bsdk\include\sys">
+      <UniqueIdentifier>{CE6DF364-3A86-DA8E-0333-6A286F0A6F28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\decomp_functions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\functions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\gccHeaders.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\gpu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\macros.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\math.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Bots.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Camera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Cdsys.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Coll.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Decal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Display.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Gamepad.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Ghost.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Howl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Instance.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_JitPool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Level.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_List.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Load.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Memcard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Mempack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_MenuBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Particle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Thread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_TileView.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_UI.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\namespace_Vehicle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ovr_230.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ovr_231.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ovr_232.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ovr_233.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\assert.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\ctype.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\dlfcn.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\elf.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\hwregs_c.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\inline_c.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\lzp\lzp.h">
+      <Filter>include\psn00bsdk\include\lzp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\lzp\lzqlp.h">
+      <Filter>include\psn00bsdk\include\lzp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxapi.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxcd.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxetc.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxgpu.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxgte.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxpad.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxpress.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxsio.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxsn.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\psxspu.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\stdio.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\stdlib.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\string.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\strings.h">
+      <Filter>include\psn00bsdk\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\sys\fcntl.h">
+      <Filter>include\psn00bsdk\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\sys\ioctl.h">
+      <Filter>include\psn00bsdk\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\psn00bsdk\include\sys\types.h">
+      <Filter>include\psn00bsdk\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\regionsEXE.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CrashTeamRacingPC.c" />
+  </ItemGroup>
+</Project>

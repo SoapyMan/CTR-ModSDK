@@ -2,6 +2,10 @@
 
 // trigonometry //
 
+#ifndef force_inline
+#define force_inline static
+#endif
+
 struct TrigTable
 {
     short sin;

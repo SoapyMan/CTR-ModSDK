@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PsyX">
+      <UniqueIdentifier>{4C24CF69-3887-5E0E-E10C-97C4CD4E2A91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PsyX\common">
+      <UniqueIdentifier>{24F85FE1-9059-3DEF-19C7-83A1852774AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PsyX\util">
+      <UniqueIdentifier>{3957C291-A56D-C027-EEE4-4B495A3A91AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\psx">
+      <UniqueIdentifier>{93FDC031-FFB2-3927-88A7-33FEF45B302B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gpu">
+      <UniqueIdentifier>{880430A9-F4E3-AE44-FDFB-391B695A15A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gte">
+      <UniqueIdentifier>{FC0430A9-68E4-AE44-71FC-391BDD5A15A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pad">
+      <UniqueIdentifier>{D12830A9-3D08-AF44-4620-3A1BB27E15A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\psx">
+      <UniqueIdentifier>{372B30A9-A30A-AF44-AC22-3A1B188115A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render">
+      <UniqueIdentifier>{1CA98B76-0861-CDC3-7168-A61F5D3F68B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{BA5238CF-A61F-93DA-CF38-8182BB64C868}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_config.h">
+      <Filter>include\PsyX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_globals.h">
+      <Filter>include\PsyX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_public.h">
+      <Filter>include\PsyX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_render.h">
+      <Filter>include\PsyX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_version.h">
+      <Filter>include\PsyX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\common\glad.h">
+      <Filter>include\PsyX\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\common\half_float.h">
+      <Filter>include\PsyX\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\common\pgxp_defs.h">
+      <Filter>include\PsyX\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\PsyX\util\timer.h">
+      <Filter>include\PsyX\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\abs.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\asm.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\gtemac.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\gtereg.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\inline_c.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\kernel.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libapi.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libcd.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libetc.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libgpu.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libgte.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libmath.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libmcrd.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libpad.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libpress.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libsn.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\libspu.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\r3000.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\rand.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\strings.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\include\psx\types.h">
+      <Filter>include\psx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\PsyX_main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gpu\PsyX_GPU.h">
+      <Filter>src\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gpu\font.h">
+      <Filter>src\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gte\PsyX_GTE.h">
+      <Filter>src\gte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gte\ratan_tbl.h">
+      <Filter>src\gte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gte\rcossin_tbl.h">
+      <Filter>src\gte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\gte\sqrt_tbl.h">
+      <Filter>src\gte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\iso9660.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\pad\PsyX_pad.h">
+      <Filter>src\pad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\platform.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PsyCross\src\util\crash_handler.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PsyCross\src\PsyX_main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\gpu\PsyX_GPU.cpp">
+      <Filter>src\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\gte\PsyX_GTE.cpp">
+      <Filter>src\gte</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\gte\half_float.cpp">
+      <Filter>src\gte</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\pad\PsyX_pad.cpp">
+      <Filter>src\pad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\ABS.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\INLINE_C.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBAPI.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBCD.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBETC.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBGPU.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBGTE.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBMCRD.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBPAD.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBSN.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\psx\LIBSPU.C">
+      <Filter>src\psx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\render\PsyX_render.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\render\glad.c">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\util\crash_handler.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PsyCross\src\util\timer.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

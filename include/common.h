@@ -3,6 +3,23 @@
 
 #ifndef REBUILD_PC
 #include <gccHeaders.h>
+#else
+#include <psx/types.h>
+#include <psx/libetc.h>
+#include <psx/libgte.h>
+#include <psx/libgpu.h>
+#include <psx/libspu.h>
+#include <psx/libcd.h>
+#include <psx/libapi.h>
+#include <psx/strings.h>
+#include <psx/inline_c.h>
+#include <PsyX/PsyX_public.h>
+#include <PsyX/PsyX_globals.h>
+
+#define _Static_assert(x)
+#define __attribute__(x)
+#define RECT RECT16
+
 #endif
 
 #include <macros.h>

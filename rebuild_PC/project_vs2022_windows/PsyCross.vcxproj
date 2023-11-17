@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_dev|Win32">
+      <Configuration>Release_dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B23EC03-77F0-460F-A009-35B78C357C9D}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PsyCross</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_dev|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\Debug\</OutDir>
+    <IntDir>obj\x86\Debug\PsyCross\</IntDir>
+    <TargetName>PsyCross</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>obj\x86\Release\PsyCross\</IntDir>
+    <TargetName>PsyCross</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_dev|Win32'">
+    <OutDir>..\bin\Release_dev\</OutDir>
+    <IntDir>obj\x86\Release_dev\PsyCross\</IntDir>
+    <TargetName>PsyCross</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4996;4554;4244;4101;4838;4309;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>USE_EXTENDED_PRIM_POINTERS=0;_DEBUG;DEBUG;NTSC_VERSION;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\dependencies\SDL2\include;..\dependencies\openal-soft\include;..\PsyCross\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\dependencies\SDL2\lib\x86;..\dependencies\openal-soft\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4996;4554;4244;4101;4838;4309;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>USE_EXTENDED_PRIM_POINTERS=0;NDEBUG;NTSC_VERSION;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\dependencies\SDL2\include;..\dependencies\openal-soft\include;..\PsyCross\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\dependencies\SDL2\lib\x86;..\dependencies\openal-soft\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_dev|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4996;4554;4244;4101;4838;4309;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>USE_EXTENDED_PRIM_POINTERS=0;NDEBUG;NTSC_VERSION;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\dependencies\SDL2\include;..\dependencies\openal-soft\include;..\PsyCross\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\dependencies\SDL2\lib\x86;..\dependencies\openal-soft\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_config.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_globals.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_public.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_render.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\PsyX_version.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\common\glad.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\common\half_float.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\common\pgxp_defs.h" />
+    <ClInclude Include="..\PsyCross\include\PsyX\util\timer.h" />
+    <ClInclude Include="..\PsyCross\include\psx\abs.h" />
+    <ClInclude Include="..\PsyCross\include\psx\asm.h" />
+    <ClInclude Include="..\PsyCross\include\psx\gtemac.h" />
+    <ClInclude Include="..\PsyCross\include\psx\gtereg.h" />
+    <ClInclude Include="..\PsyCross\include\psx\inline_c.h" />
+    <ClInclude Include="..\PsyCross\include\psx\kernel.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libapi.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libcd.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libetc.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libgpu.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libgte.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libmath.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libmcrd.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libpad.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libpress.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libsn.h" />
+    <ClInclude Include="..\PsyCross\include\psx\libspu.h" />
+    <ClInclude Include="..\PsyCross\include\psx\r3000.h" />
+    <ClInclude Include="..\PsyCross\include\psx\rand.h" />
+    <ClInclude Include="..\PsyCross\include\psx\strings.h" />
+    <ClInclude Include="..\PsyCross\include\psx\types.h" />
+    <ClInclude Include="..\PsyCross\src\PsyX_main.h" />
+    <ClInclude Include="..\PsyCross\src\gpu\PsyX_GPU.h" />
+    <ClInclude Include="..\PsyCross\src\gpu\font.h" />
+    <ClInclude Include="..\PsyCross\src\gte\PsyX_GTE.h" />
+    <ClInclude Include="..\PsyCross\src\gte\ratan_tbl.h" />
+    <ClInclude Include="..\PsyCross\src\gte\rcossin_tbl.h" />
+    <ClInclude Include="..\PsyCross\src\gte\sqrt_tbl.h" />
+    <ClInclude Include="..\PsyCross\src\iso9660.h" />
+    <ClInclude Include="..\PsyCross\src\pad\PsyX_pad.h" />
+    <ClInclude Include="..\PsyCross\src\platform.h" />
+    <ClInclude Include="..\PsyCross\src\util\crash_handler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PsyCross\src\PsyX_main.cpp" />
+    <ClCompile Include="..\PsyCross\src\gpu\PsyX_GPU.cpp" />
+    <ClCompile Include="..\PsyCross\src\gte\PsyX_GTE.cpp" />
+    <ClCompile Include="..\PsyCross\src\gte\half_float.cpp" />
+    <ClCompile Include="..\PsyCross\src\pad\PsyX_pad.cpp" />
+    <ClCompile Include="..\PsyCross\src\psx\ABS.C" />
+    <ClCompile Include="..\PsyCross\src\psx\INLINE_C.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBAPI.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBCD.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBETC.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBGPU.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBGTE.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBMCRD.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBPAD.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBSN.C" />
+    <ClCompile Include="..\PsyCross\src\psx\LIBSPU.C" />
+    <ClCompile Include="..\PsyCross\src\render\PsyX_render.cpp" />
+    <ClCompile Include="..\PsyCross\src\render\glad.c" />
+    <ClCompile Include="..\PsyCross\src\util\crash_handler.cpp" />
+    <ClCompile Include="..\PsyCross\src\util\timer.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
